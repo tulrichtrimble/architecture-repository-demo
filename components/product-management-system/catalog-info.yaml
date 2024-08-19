@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: system
 metadata:
   name: product-management
   description: Manages catalog tenants
