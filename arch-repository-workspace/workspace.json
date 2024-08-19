@@ -1,0 +1,255 @@
+{
+  "configuration" : { },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedDate" : "2024-08-17T23:55:34Z",
+  "model" : {
+    "people" : [ {
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "Useropotomus",
+      "properties" : {
+        "structurizr.dsl.identifier" : "userthing"
+      },
+      "relationships" : [ {
+        "description" : "Uses",
+        "destinationId" : "1",
+        "id" : "3",
+        "properties" : {
+          "structurizr.dsl.identifier" : "7870a006-c7dc-4575-a4ba-b6ff727ae2f5"
+        },
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "documentation" : {
+        "decisions" : [ {
+          "content" : "# 1. Architecture Repository Platform\n\nDate: 2024-08-17\n\n## Status\n\nAccepted\n\n## Context\n\nThe issue motivating this decision, and any context that influences or constrains the decision.\n\n## Decision\n\nThe change that we're proposing or have agreed to implement.\n\n## Consequences\n\nWhat becomes easier or more difficult to do and any risks introduced by the change that will need to be mitigated.\n",
+          "date" : "2024-08-17T07:00:00Z",
+          "format" : "Markdown",
+          "id" : "1",
+          "status" : "Accepted",
+          "title" : "Architecture Repository Platform"
+        } ],
+        "sections" : [ {
+          "content" : "## Some System Documentation and Design",
+          "filename" : "\\design.md",
+          "format" : "Markdown",
+          "order" : 1,
+          "title" : ""
+        } ]
+      },
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "Architecture Repository",
+      "properties" : {
+        "structurizr.dsl.identifier" : "repository"
+      },
+      "tags" : "Element,Software System"
+    }, {
+      "containers" : [ {
+        "documentation" : { },
+        "id" : "12",
+        "name" : "Web Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "webapp"
+        },
+        "relationships" : [ {
+          "description" : "Gets data X from",
+          "destinationId" : "5",
+          "id" : "14",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f3a7e737-a717-460b-8fd6-1d99057d8158"
+          },
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Reads from and writes to",
+          "destinationId" : "13",
+          "id" : "16",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8166891b-4967-47d0-a161-d21c78d43e7b"
+          },
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container"
+      }, {
+        "documentation" : { },
+        "id" : "13",
+        "name" : "Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "tags" : "Element,Container"
+      } ],
+      "documentation" : { },
+      "id" : "4",
+      "location" : "Unspecified",
+      "name" : "A",
+      "properties" : {
+        "structurizr.dsl.identifier" : "a"
+      },
+      "relationships" : [ {
+        "description" : "Gets data X from",
+        "destinationId" : "5",
+        "id" : "15",
+        "linkedRelationshipId" : "14",
+        "sourceId" : "4"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "documentation" : { },
+      "id" : "5",
+      "location" : "Unspecified",
+      "name" : "B",
+      "properties" : {
+        "structurizr.dsl.identifier" : "b"
+      },
+      "relationships" : [ {
+        "destinationId" : "6",
+        "id" : "9",
+        "properties" : {
+          "structurizr.dsl.identifier" : "057fd0e1-268f-4e10-8751-54242a619956"
+        },
+        "sourceId" : "5",
+        "tags" : "Relationship"
+      }, {
+        "destinationId" : "7",
+        "id" : "10",
+        "properties" : {
+          "structurizr.dsl.identifier" : "6091e391-3e9b-4925-8113-5921f7a52ddf"
+        },
+        "sourceId" : "5",
+        "tags" : "Relationship"
+      }, {
+        "destinationId" : "8",
+        "id" : "11",
+        "properties" : {
+          "structurizr.dsl.identifier" : "659c2122-7274-427b-a311-a2ffe3d2915f"
+        },
+        "sourceId" : "5",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "documentation" : { },
+      "id" : "6",
+      "location" : "Unspecified",
+      "name" : "C",
+      "properties" : {
+        "structurizr.dsl.identifier" : "c"
+      },
+      "tags" : "Element,Software System"
+    }, {
+      "documentation" : { },
+      "id" : "7",
+      "location" : "Unspecified",
+      "name" : "D",
+      "properties" : {
+        "structurizr.dsl.identifier" : "d"
+      },
+      "tags" : "Element,Software System"
+    }, {
+      "documentation" : { },
+      "id" : "8",
+      "location" : "Unspecified",
+      "name" : "E",
+      "properties" : {
+        "structurizr.dsl.identifier" : "e"
+      },
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Name",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIGV4dGVuZHMgIi4vc2hhcmVkLXdvcmtzcGFjZS5kc2wiIHsNCiAgICBtb2RlbCB7DQogICAgICAgICFleHRlbmQgYSB7DQogICAgICAgICAgICB3ZWJhcHAgPSBjb250YWluZXIgIldlYiBBcHBsaWNhdGlvbiINCiAgICAgICAgICAgIGRhdGFiYXNlID0gY29udGFpbmVyICJEYXRhYmFzZSINCiAgICAgICAgICAgIA0KICAgICAgICAgICAgd2ViYXBwIC0+IGIgIkdldHMgZGF0YSBYIGZyb20iDQogICAgICAgICAgICB3ZWJhcHAgLT4gZGF0YWJhc2UgIlJlYWRzIGZyb20gYW5kIHdyaXRlcyB0byINCiAgICAgICAgfQ0KICAgICAgICAhZXh0ZW5kIHJlcG9zaXRvcnkgew0KICAgICAgICAgICAgIWRvY3MgLi9kb2NzDQogICAgICAgICAgICAhYWRycyAuL2RvYy9hZHINCiAgICAgICAgfQ0KICAgIH0NCg0KICAgIHZpZXdzIHsNCiAgICAgICAgc3lzdGVtQ29udGV4dCByZXBvc2l0b3J5ICJUeWxlcl9kaWFncmFtX3Rlc3QiIHsNCiAgICAgICAgICAgIGluY2x1ZGUgKg0KICAgICAgICB9DQoNCiAgICAgICAgZHluYW1pYyAqIHsNCiAgICAgICAgICAgIGEgLT4gYiAiTWFrZXMgYSByZXF1ZXN0IHRvIg0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICAgICAgYiAtPiBjICJHZXRzIGRhdGEgZnJvbSINCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgICAgICBiIC0+IGQgIkdldHMgZGF0YSBmcm9tIg0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIGIgLT4gZSAiU2VuZHMgZGF0YSB0byINCiAgICAgICAgfQ0KICAgIH0NCn0NCg=="
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "Tyler_diagram_test",
+      "styles" : { },
+      "terminology" : { }
+    },
+    "dynamicViews" : [ {
+      "dimensions" : {
+        "height" : 1748,
+        "width" : 2480
+      },
+      "elements" : [ {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 425,
+        "y" : 355
+      }, {
+        "id" : "6",
+        "x" : 1450,
+        "y" : 545
+      }, {
+        "id" : "7",
+        "x" : 290,
+        "y" : 1215
+      }, {
+        "id" : "8",
+        "x" : 1200,
+        "y" : 1060
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-001",
+      "order" : 2,
+      "paperSize" : "A5_Landscape",
+      "relationships" : [ {
+        "description" : "Makes a request to",
+        "id" : "15",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Gets data from",
+        "id" : "10",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Gets data from",
+        "id" : "9",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Sends data to",
+        "id" : "11",
+        "order" : "3",
+        "response" : false
+      } ]
+    } ],
+    "systemContextViews" : [ {
+      "dimensions" : {
+        "height" : 1748,
+        "width" : 2480
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 1015,
+        "y" : 725
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "Tyler_diagram_test",
+      "order" : 1,
+      "paperSize" : "A5_Landscape",
+      "relationships" : [ {
+        "id" : "3"
+      } ],
+      "softwareSystemId" : "1"
+    } ]
+  }
+}

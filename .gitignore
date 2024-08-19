@@ -1,0 +1,14 @@
+bin/
+adr-tools-3.0.0/
+**/*.class
+
+examples/java/.gradle
+examples/java/.idea
+examples/java/build
+examples/java/out
+
+examples/**/.structurizr
+examples/**/.idea
+examples/**/.gradle
+examples/**/build
+examples/dsl/**/*.json
