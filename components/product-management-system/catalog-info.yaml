@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: system
 metadata:
   name: product-management
-  description: Manages catalog tenants
+  description: Registers software tenant lifecycle and orchestrates license flows
 spec:
-  owner: core-services
+  owner: users
   domain: shared
